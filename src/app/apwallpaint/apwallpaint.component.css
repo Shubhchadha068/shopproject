@@ -1,0 +1,29 @@
+.product1{
+  color: black;
+ margin-left: 70px;
+  height: 350px;
+  width: 350px;
+  margin-right: 1110px;
+}
+.container-fluid{
+  margin-top: 30px;
+
+  height:350px
+}
+img{
+  width:320px;
+  height: 300px;;
+}
+.product-content{
+ margin-top: -350px;
+  height: 350px;
+  width: 800px;
+margin-right: 40px;
+margin-left: 470px;
+}h2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+ul{
+  font-size: 20px;
+}

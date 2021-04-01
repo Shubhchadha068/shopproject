@@ -1,0 +1,29 @@
+img{
+  width: 1490px;
+  height: 675px;
+  background-size: cover;
+
+}
+
+
+.container{
+  margin: 0%;
+  padding: 0%;
+}
+.container:before{
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image:'../../assets/images/shopfront.jpeg';
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: blur(10px);
+  -moz-filter:blur(10px);
+  filter:blur(10px);
+}
+
+
+

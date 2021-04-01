@@ -1,0 +1,112 @@
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- <ol class="carousel-indicators"> -->
+  <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol> -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-interval="1200">
+  <div class="overlay-image" style="background-image:url(../../assets/images/approducts.png);"></div>
+  <div class=" carousel-content">
+  <h1>We Offer Quality Products</h1>
+  <a href="#" class="btn btn-lg btn-primary">
+  View More</a>
+  </div>
+  </div>
+
+ <div class="carousel-item " data-interval="1200">
+  <div class="overlay-image" style="background-image:url(../../assets/images/brushesap.png);"></div>
+  <div class=" carousel-content">
+  <h1>Let's Paint Your Dream Home</h1>
+   <p style="font-size: 22px;">to look it more attractive </p>
+  <a href="#" class="btn btn-lg btn-primary">
+  View More</a>
+  </div>
+  </div>
+
+  <div class="carousel-item " data-interval="1200">
+    <div class="overlay-image" style="background-image:url(../../assets/images/cretexap.webp);"></div>
+    <div class="carousel-content">
+    <h1> Use Latest Finishing Pattern</h1>
+    <p style="font-size: 22px;">for your home  </p>
+    <a href="#" class="btn btn-lg btn-primary">
+    sign up today</a>
+    </div>
+    </div>
+
+    <div class="carousel-item " data-interval="1200">
+      <div class="overlay-image" style="background-image:url(../../assets/images/wallpaintap.webp);"></div>
+      <div class="carousel-content">
+      <h1>example headline</h1>
+      <p>aajkscnsdkjcbskjvbslvkbvlkbdvjdhbdkjvbkhvbffbfvdddddddddddddddddddddddddddd</p>
+      <a href="#" class="btn btn-lg btn-primary">
+      sign up today</a>
+      </div>
+      </div>
+
+
+  <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+  <span class="sr-only">Previous</span>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+  <span class="sr-only">Next</span>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+  </div>
+
+  <!-- <div class="containers">
+  <div class="container-product1">
+    <button type="button" class="btn btn-info" >Info1</button></div>
+    <div class="container-product2"> <button type="button" class="btn btn-info" >Info2</button></div></div>
+
+
+  <div class="container-product3"> -->
+    <!-- <button type="button" class="btn btn-info" routerLink="">bushes</button>
+    <button type="button" class="btn btn-info" >wallpaint</button>
+
+    <button type="button" http://localhost:4200/productsclass="btn btn-info" >wall putty</button>
+
+    <button type="button" class="btn btn-info" >createx</button>
+    <button type="button" class="btn btn-info" > wallpapers</button>
+    <button type="button" class="btn btn-info" >Door paint</button> -->
+    <br><br><br><br><br>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-xl cont1" style="background-color: blueviolet; margin-right: 30px;  ">
+          One of three columns
+        </div>
+        <div class="container-xxl cont2" style="background-color: blueviolet; margin-right: 30px;">
+          One of three columns
+        </div>
+        <div class="container-xxl cont3" style="background-color: blueviolet; margin-right: 30px;">
+          One of three columns
+        </div>
+        <div class="container-xxl cont4" style="background-color: blueviolet; margin-right: 30px;">
+          One of three columns
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <img class="img1" [src]="brushImage" alt="">
+      <button class="btn1 btn-lg btn-primary " [routerLink]="'/apbrush'">Brushes and Rollers</button>
+
+      <img class="img2" [src]="wallPutty" alt="">
+      <button class="btn3  btn-lg btn-primary "  [routerLink]="'/wallputty'">Wall Putty</button>
+
+      <img class="img3" [src]="wallPaint" alt="">
+      <button class="btn2  btn-lg btn-primary " [routerLink]="'/wallpaint'" >Ace/Apex products</button>
+
+      <img class="img4" [src]="createx" alt="">
+      <button class="btn4  btn-lg btn-primary " [routerLink]="'/createx'">Createx</button>
+
+      <img class="img5" [src]="doorPaint" alt="">
+      <button class="btn5  btn-lg btn-primary " [routerLink]="'/doorPaint'">Enamel Paints</button>
+
+      <img class="img6" [src]="smartCare" alt="">
+      <button class="btn6  btn-lg btn-primary "[routerLink]="'/smartcare'">SmartCare Products</button>
+
+    </div>
+
+<router-outlet></router-outlet>

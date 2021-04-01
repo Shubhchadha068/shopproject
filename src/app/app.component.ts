@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopProject1';
+  myImage:string="assets/images/bgimage.jpg"
 }

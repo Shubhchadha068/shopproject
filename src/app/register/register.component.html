@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" >
+  </head>
+  <body>
+      <div class="login-form">
+          <h2>Register</h2>
+          <form #userform="ngForm"  (ngSubmit)="userform.form.valid && getValues(userform)">
+            <p>Name</p>
+            <input type="email" placeholder="Enter your Name" name="username" class="form-control"
+            [(ngModel)]="userservice.newUser.username"
+            #username="ngModel"
+            required
+            pattern="^[[A-Z]|[a-z]][[A-Z]|[a-z]|\\d|[_]]{7,29}$"
+            [ngClass]="{'is-invalid':userform.submitted && username.invalid}" >
+            <mat-error *ngIf="userform.submitted && username.invalid">
+            <mat-error *ngIf="username.hasError('required')">*Username is Required</mat-error>
+            <mat-error *ngIf="username.hasError('pattern')">*Enter your name in characters only</mat-error>
+          </mat-error>
+
+
+            <p>Email</p>
+            <input type="email" placeholder="Enter Email" name="email" class="form-control"
+            [(ngModel)]="userservice.newUser.email"
+            #email="ngModel"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            [ngClass]="{'is-invalid':userform.submitted && email.invalid}" >
+            <mat-error *ngIf="userform.submitted && email.invalid">
+            <mat-error *ngIf="email.hasError('required')">*Email is Required</mat-error>
+            <mat-error *ngIf="email.hasError('pattern')">*Email should be in proper format</mat-error></mat-error>
+
+
+            <p>Password<mat-icon (click)="visible()">{{vis}}</mat-icon> </p>
+            <input type={{type}} placeholder="Enter Password" name="password"
+       [(ngModel)]="userservice.newUser.password"
+       #password="ngModel"
+      required
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      [ngClass]="{'is-invalid':userform.submitted && password.invalid}">
+      <mat-error *ngIf="userform.submitted &&password.invalid">
+      <mat-error *ngIf="password.hasError('required')">*Password is Required</mat-error>
+
+      <mat-error *ngIf="password.hasError('pattern')">*Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</mat-error>
+    </mat-error>
+
+            <p>Contact</p>
+            <input type="email" placeholder="Enter your Contact Number" name="contact" class="form-control"
+            [(ngModel)]="userservice.newUser.contact"
+            #contact="ngModel"
+            required
+            pattern="[6789][0-9]{9}"
+            [ngClass]="{'is-invalid':userform.submitted && contact.invalid}" >
+            <mat-error *ngIf="userform.submitted && contact.invalid">
+            <mat-error *ngIf="contact.hasError('required')">*Contact number is Required</mat-error>
+            <mat-error *ngIf="contact.hasError('pattern')">*Please enter valid number</mat-error>
+          </mat-error>
+
+            <p>Address</p>
+            <input type="email" placeholder="Enter Your Permanent Address" name="address" class="form-control"
+            [(ngModel)]="userservice.newUser.address"
+            #address="ngModel"
+            required
+            [ngClass]="{'is-invalid':userform.submitted && address.invalid}" >
+            <mat-error *ngIf="userform.submitted && address.invalid">
+            <mat-error *ngIf="address.hasError('required')">*Address is Required</mat-error></mat-error>
+
+            <input type="submit" value="Register">
+            <label>Already Have an account?</label>
+            <a class="txt2" href="login">Login-></a>
+          </form>
+      </div>
+  </body>
+</html>
+

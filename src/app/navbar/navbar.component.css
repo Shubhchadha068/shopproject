@@ -1,0 +1,44 @@
+/* img{
+  width: 1495px;
+  height: 1000px;
+  background-size: cover;
+
+} */
+nav {
+  background-image: linear-gradient(-90deg, #d38312, #a83279,#43cea2, #185a9d);
+  /* height: 70px; */
+  /* position: fixed;
+  width:100%; */
+
+}
+.nav-link{
+  font-size: 16px;
+  margin: 3px;
+  color: #fff!important;
+  font-weight: 500;
+}
+.spacer{
+  flex: auto;
+}
+.content:hover{
+  background-color: pink;
+  }
+  /* a:active{
+    background-color: pink;
+  } */
+.logo-image{
+  width: 76px;
+  height: 40px;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  margin-top: -3px;
+
+
+}
+
+.phn{
+  margin-top: -28px;
+}
+.mail{
+  margin-top: -28px;
+}
